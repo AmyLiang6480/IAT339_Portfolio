@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    list-style-type: none;
+/*    list-style-type: none;*/
     text-decoration: none;
 }
 
@@ -221,6 +221,12 @@ p {
     font-size: 1.5rem;
     text-transform: uppercase;
 }
+
+.primary-btn:hover,
+.primary-btn:focus {
+  background-color: var(--secondary-color);
+}
+
 .buttons .primary-btn.outline {
     background-color: transparent;
     border: 2px solid var(--primary-color);
@@ -231,6 +237,10 @@ p {
     color: var(--primary-color);
 }
 
+.buttons svg:hover
+.buttons svg:focus{
+    color: var(--secondary-color);
+}
 
 .navigation{
     margin-left: 3rem;
@@ -241,7 +251,7 @@ p {
 #landing {
     height: 100vh;
     width: 100%;
-    padding-top: 10rem;
+/*    padding-top: 10rem;*/
 }
 #landing .container {
     display: flex;
@@ -645,9 +655,12 @@ p {
     margin-bottom: 20px;
 }
 .project-text {
-    background-color: #FE8E8E;
+/*    background-color: #FE8E8E;*/
     padding: 20px;
     border-radius: 10px;
+    border-style: inset;
+    border: 2px solid #FE8E8E;
+    color: #FE8E8E;
 }
 .project-text h2 {
     margin-top: 0;

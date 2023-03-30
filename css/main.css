@@ -38,11 +38,6 @@ h2.h-2 {
   margin-top: 0;
 }
 
-h2 {
-  font-family: 'Josefin Sans', sans-serif;
-  margin-top: 1rem;
-}
-
 h3 {
   font-family: 'Josefin Sans', sans-serif;
   font-style: italic;
@@ -246,6 +241,7 @@ ul.list {
 }
 
 .list li {
+  list-style-type: square;
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 400;
