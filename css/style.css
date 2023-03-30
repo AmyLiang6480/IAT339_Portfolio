@@ -31,7 +31,6 @@ img {
 
 body {
     color: var(--text-color);
-    
 }
 
 header {
@@ -41,6 +40,15 @@ header {
     width: 100%;
     background: var(--bg-color);
     box-shadow: 0 1px 4px hsl(0, 4% 15% / 10%);
+}
+
+.white{
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+h1.white{
+    margin-top: 2rem;
 }
 
 .nav {
@@ -166,7 +174,7 @@ section landing service about projects {
 }
 
 p {
-    font-size: 1.6rem;
+    font-size: 0.85rem;
     color: var(--secondary-black);
 }
 
@@ -208,7 +216,10 @@ p {
     color: white;
     font-size: 1.8rem;
     padding: 0.6em 1.6em;
-    border-radius: 50px;
+    border-radius: 40px;
+    font-family: "Ubuntu";
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 .buttons .primary-btn.outline {
     background-color: transparent;
@@ -453,8 +464,8 @@ p {
     min-height: 400px;
 }
 #about .left .card .img {
-    width: 70px;
-    height: 70px;
+    width: 120px;
+    height: 120px;
     margin: 0 auto;
     border-radius: 50%;
     overflow: hidden;
@@ -519,7 +530,7 @@ p {
     flex: 1;
 }
 #projects .item .right {
-    margin-left: -150px;
+    margin-left: -100px;
     flex: 1;
     background-color: var(--body-bg);
     padding: 5rem 3rem;
@@ -531,10 +542,10 @@ p {
     margin-left: 0;
 }
 #projects .item:nth-of-type(even) .left {
-    margin-left: -150px;
+    margin-left: -70px;
 }
 #projects .item .left .img {
-    height: 500px;
+    height: 460px;
     overflow: hidden;
     border-radius: 12px;
     overflow: hidden;
@@ -548,7 +559,8 @@ p {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: #5a24ed38;
+    background-color: #15CDCB26;
+/*    background-color: #5a24ed38;*/
 }
 #projects .item .left .img img {
     object-fit: cover;
@@ -560,7 +572,7 @@ p {
 }
 #projects .item .right .project-title {
     font-size: 2.5rem;
-    font-family: 'Montserrat';
+    font-family: 'Josefin Sans', sans-serif;
     margin-bottom: 1rem;
 }
 #projects .item .right .project-sub-title {
@@ -608,5 +620,56 @@ p {
     #projects .item .right .buttons a {
         width: 100%;
         text-align: center;
+    }
+}
+
+
+
+.banner {
+    width:100vw;
+    height: 10vh;
+    margin: 0 auto;
+}
+.banner h1 {
+    margin: 0;
+}
+.container .main-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.project-text {
+    background-color: #FE8E8E;
+    padding: 20px;
+    border-radius: 10px;
+}
+.project-text h2 {
+    margin-top: 0;
+}
+.project-text p {
+    margin-bottom: 0;
+}
+.project-image {
+    max-width: 100%;
+    height: auto;
+}
+@media screen and (min-width: 600px) {
+    .project {
+        flex-direction: row;
+    }
+    .project-text {
+        flex-basis: 50%;
+        padding: 20px;
+    }
+    .project-image {
+        flex-basis: 50%;
+        max-width: 100%;
+        height: auto;
     }
 }

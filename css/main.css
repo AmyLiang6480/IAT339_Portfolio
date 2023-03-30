@@ -30,12 +30,17 @@ hr {
 }
 
 h1{
-  font-family: 'Syne', sans-serif;
+  font-family: "Syne", sans-serif;
   font-size: 2rem;
 }
 
 h2.h-2 {
   margin-top: 0;
+}
+
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 1rem;
 }
 
 h3 {
@@ -45,11 +50,12 @@ h3 {
 }
 
 h4 {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.8rem;
 }
 
 p {
   margin-top: 0;
+  font-family: "Ubuntu";
 }
 
 nav a:hover,
@@ -292,35 +298,6 @@ ul.list {
   flex: 1;
 }
 
-.payment input,
-.checkout input {
-  max-width: 100%;
-}
-
-.payment,
-.checkout {
-  max-width: 500px;
-}
-
-.btns-right {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-  justify-content: end;
-}
-
-.product {
-  max-width: 400px;
-}
-
-.card {
-  width: 100%;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
 
 #banner-placeholder {
   height: 400px;
@@ -359,11 +336,6 @@ ul.list {
   margin: 0;
 }
 
-.pricing {
-  margin-left: auto;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
 
 .section {
   padding: 2rem;
@@ -493,14 +465,6 @@ ul.list {
 
   .search {
     display: none;
-  }
-
-  .checkout-row {
-    flex-direction: column;
-  }
-
-  .checkout-row .row {
-    flex-direction: row;
   }
 }
 
