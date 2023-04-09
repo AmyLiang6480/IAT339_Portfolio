@@ -24,7 +24,6 @@ section {
 }
 
 
-
 img {
     width: 100%;
 }
@@ -244,13 +243,14 @@ p {
 
 .navigation{
     margin-left: 3rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 /* landing section Styles */
 #landing {
     height: 100vh;
     width: 100%;
+    margin-top: -6.5rem;
 /*    padding-top: 10rem;*/
 }
 #landing .container {
@@ -309,7 +309,7 @@ p {
     }
 }
 #landing .left .intro {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     font-size: 0.95rem;
     max-width: 400px;
     animation: fade 0.3s ease-in forwards;
@@ -657,16 +657,21 @@ p {
 .project-text {
 /*    background-color: #FE8E8E;*/
     padding: 20px;
+    margin-top: 2.5rem;
     border-radius: 10px;
     border-style: inset;
-    border: 2px solid #FE8E8E;
-    color: #FE8E8E;
+    border: 2px solid var(--secondary-color);
 }
 .project-text h2 {
     margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: var(--highlight-color);
+    font-family: "Syne";
 }
 .project-text p {
     margin-bottom: 0;
+    line-height: 1.4rem;
+    color: var(--secondary-color);
 }
 .project-image {
     max-width: 100%;
