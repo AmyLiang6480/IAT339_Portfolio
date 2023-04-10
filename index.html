@@ -14,24 +14,6 @@
   <body style="padding: 2rem">
     <section class="index_center">
       <h1 class="h1">P03 - Style Guide</h1>
-      <!-- <nav class="col">
-        <a class="text-link" href="portfolio.html">Portfolio Page</a>
-        <a class="text-link" href="project1.html">Project 1 Page</a>
-        <a class="text-link" href="project2.html">Project 2 Page</a>
-        <a class="text-link" href="project1.html">Contact Page</a>
-        <a class="text-link" href="index.html">Style Guide Page</a>
-      </nav>
-    </section>
-    <section class="index_center">
-      <nav class="col">
-        <a class="text-link" href="#branding">Colors</a>
-        <a class="text-link" href="#images">Images</a>
-        <a class="text-link" href="#icons">Icons</a>
-        <a class="text-link" href="#interactive_elements">Interactive Elements</a>
-        <a class="text-link" href="#text_elements">Text Elements</a>
-        <a class="text-link" href="#combined_elements">Combined Elements</a>
-        <a class="text-link" href="#citations">Citations</a>
-      </nav> -->
 
       <nav role="navigation" class="primary-navigation">
         <ul>
@@ -43,7 +25,7 @@
               <li><a href="#interactive_elements">Interactive Elements</a></li>
               <li><a href="#text_elements">Text Elements</a></li>
               <li><a href="#combined_elements">Combined Elements</a></li>
-              <li><a href="#citations">Ciations</a></li>
+              <li><a href="#citations">Citations</a></li>
             </ul>
           </li>
           <li><a href="#">Project Pages &dtrif;</a>
@@ -87,13 +69,15 @@
       <div class="row">
         <div class="logo">
           <h4 class="h4">Logo</h4>
-          <!-- <img src="assets/logo.png" alt="Logo" /> -->
+              <img src="./assets/logo.png" alt="my logo">
         </div>
         <div class="image">
           <h4 class="h4">Project 1 Image</h4>
+          <img src="./assets/forgrand_mockup.png" alt="">
         </div>
         <div class="image">
           <h4 class="h4">Project 2 Image</h4>
+          <img src="./assets/spincity_mockup.png" alt="">
         </div>
       </div>
     </section>
@@ -122,49 +106,30 @@
 
 
         <h4 class="h4">Rendered element:</h4>
-        <button class="btn btn-primary" href="#">Primary Button</button>
-
+        <!-- <button class="buttons primary-btn" href="#">Primary Button</button> -->
+        <div class="buttons">
+          <a href="#" class="primary-btn">Primary Button</a>
+        </div>
         <hr />
-
-        <h4 class="h4">CSS selector:</h4>
-        <p>.btn .btn-secondary</p>
-
-        <h4 class="h4">Rendered element:</h4>
-        <button class="btn btn-secondary" href="#">Secondary Button</button>
-
-        <hr />
-
         <h4 class="h4">CSS selector:</h4>
         <p>.btn .btn-outline</p>
 
-        <h4 class="h4">Rendered element:</h4>
-        <button class="btn btn-outline" href="#">Outlined Button</button>
       </section>
 
       <section class="element">
-        <h3 class="h3">Text Input Field with Label</h3>
+        <h3 class="h3">Text Input Field with Submit Button</h3>
         <h4 class="h4">CSS selector:</h4>
-        <p>.input</p>
+        <p>textarea</p>
 
         <h4 class="h4">Rendered element:</h4>
-        <div class="input">
-          <label for="input">Label</label>
-          <input id="input" />
-          <div class="support">Supporting text</div>
-        </div>
+        <textarea placeholder="MESSAGE" name="message" required></textarea>
+          <button class="btn" id="submit" type="submit" value="SEND">
+            <!-- <div class="alt-send-button"> -->
+              <span class="send-text">SEND</span>
+            <!-- </div> -->
+          </button>
       </section>
 
-
-      <section class="element">
-        <h3 class="h3">Image as a Link</h3>
-        <h4 class="h4">CSS selector:</h4>
-        <p>.img-link</p>
-
-        <h4 class="h4">Rendered element:</h4>
-        <a class="img-link" href="#">
-          <img src="./img/product1.png" />
-        </a>
-      </section>
     </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
 
@@ -219,20 +184,28 @@
 
 
         <h4 class="h4">Rendered element:</h4>
-        <div class="nav">
-          <div class="nav-section">
-            <a class="nav-brand">
-              <img src="./assets/1.webp" />
-            </a>
-            <a class="text-link">One</a>
-            <a class="text-link">Two</a>
-            <a class="text-link">Three</a>
-          </div>
-          <div class="nav-section">
-            <button class="btn btn-outline">Login</button>
-            <button class="btn btn-primary">Register</button>
-          </div>
-        </div>
+        <nav role="navigation" class="primary-navigation">
+          <ul>
+            <li><a href="portfolio.html">Portfolio Page</a></li>
+            <li><a href="index.html">Style Guide &dtrif;</a>
+              <ul class="dropdown">
+                <li><a href="#branding">Color</a></li>
+                <li><a href="#images">Image</a></li>
+                <li><a href="#interactive_elements">Interactive Elements</a></li>
+                <li><a href="#text_elements">Text Elements</a></li>
+                <li><a href="#combined_elements">Combined Elements</a></li>
+                <li><a href="#citations">Citations</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Project Pages &dtrif;</a>
+              <ul class="dropdown">
+                <li><a href="project1.html">For Grand App Interface Design</a></li>
+                <li><a href="project2.html">Spin City Records Web Design</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact Page</a></li>
+          </ul>
+        </nav>
       </section>
 
       
