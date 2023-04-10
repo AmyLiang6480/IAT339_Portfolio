@@ -514,6 +514,7 @@ ul.list {
 }
 
 #icons .row {
+  margin-top: -3rem;
   padding-top: 1rem;
 }
 
