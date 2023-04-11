@@ -869,7 +869,7 @@ p {
     color:#50E0B5cc;
 }
 
-.social-media-list li {
+.social-media-list .contact-icon{
   position: relative; 
   display: inline-block;
   height: 60px;
@@ -882,7 +882,7 @@ p {
   transition: all .2s ease-in-out;
 }
 
-.social-media-list li:after {
+.social-media-list .contact-icon:after {
   content: '';
   position: absolute;
   top: 0;
@@ -896,17 +896,17 @@ p {
   transition: all .2s ease-in-out;
 }
 
-.social-media-list li:hover {
+.social-media-list .contact-icon:hover {
   background-color: #fff; 
 }
 
-.social-media-list li:hover:after {
+.social-media-list .contact-icon:hover:after {
   opacity: 1;  
   transform: scale(1.12);
   transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
 }
 
-.social-media-list li:hover a {
+.social-media-list .contact-icon:hover a {
   color: #000;
 }
 
