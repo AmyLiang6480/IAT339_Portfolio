@@ -11,11 +11,15 @@
   --text-primary-color: #fff;
   --text-secondary-color: rgba(0, 0, 0, 0.6);
 
-  --btn-primary-background: #17a2b8;
+  --btn-primary-background: #50E0B5;
   --btn-primary-text-color: #fff;
 
   --btn-secondary-color: #fff;
   --btn-secondary-text-color: var(--text-primary-color);
+
+  --transparent-primary-color: #50E0B5A6;
+  --transparent-secondary-color: #15CDCBA6;
+  --transparent-highlight-color: #FE8E8EA6;
 
   /* Footer */
   --overlay-1-background: #f0f0f0;
