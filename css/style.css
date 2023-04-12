@@ -659,6 +659,26 @@ p {
     #projects .item:nth-of-type(even) .left {
         margin-left: 0;
     }
+
+    #projects .item .right .project-title {
+        margin-top: 3.5rem;
+        font-size: 3rem;
+}
+    #projects .item .right .project-sub-title {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    #projects .item .right .project-desc {
+        color: var(--primary-color);
+        font-size: 1.6rem;
+    }
+
+    #projects .item .left .img img {
+        margin-top: -3rem;
+        object-fit: cover;
+        transition: 0.3s ease transform;
+    }
 }
 @media only screen and (max-width: 450px) {
     #projects .item .right .buttons {
